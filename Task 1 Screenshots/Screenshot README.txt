@@ -1,0 +1,1 @@
+I was able to create a website that fairly accurately represents the wireframes I submitted for Task 1, therefore no changes were required to my original design.
