@@ -1,0 +1,184 @@
+/* global header styles*/
+.header {
+  width: flex;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #333;
+  color: white;
+}
+
+/* Homepage Header */
+.home-header {
+  height: 200px;
+}
+/* Home Page Heading*/
+.home-header h1 {
+  font-size: 2.5em;
+}
+/* Home Header Flag */
+.home-header-flag {
+  position: absolute;
+  right: 20px; 
+  padding: 10px; 
+  height: auto; 
+  max-height: 100%; 
+  max-width: 200px; 
+}
+/* Home Header Flag */
+.home-header-map {
+  position: absolute;
+  left: 20px; 
+  padding: 10px; 
+  height: auto; 
+  max-height: 100%; 
+  max-width: 200px; 
+}
+/*Interior page*/
+.subheading {
+  font-size: 1.5em; 
+  margin: 0;
+}
+/*Interior Page Subheader*/
+.page-title {
+  font-size: 2em;
+}
+/*Interior page container for heading/subheading*/
+.header-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Interior Header Flag */
+.header-flag {
+  position: absolute;
+  right: 20px;
+  padding: 10px;
+  height: auto;
+  max-height: 100%;
+  max-width: 100px;
+}
+
+/* Interior Header Flag */
+.header-map {
+  position: absolute;
+  left: 20px;
+  padding: 10px;
+  height: auto;
+  max-height: 100%;
+  max-width: 100px;
+}
+
+/* Interior Page Header */
+.page-header {
+  height: 125px;
+}
+
+
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+}
+  
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+}
+  
+.navbar li {
+    flex: 1;
+}
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+  
+.navbar li a:hover {
+    background-color: #575757;
+}
+  
+.navbar li a.active {
+    background-color: #04AA6D;
+}
+
+/*global page styles*/
+
+main {
+    padding: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/*contact form styles*/
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+/*inout field styles*/
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px 10px 10px 10px;
+    /*padding: 10px;*/
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+/*allows user to expand text question area*/
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}

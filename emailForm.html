@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <!-- Page header -->
+    <header class="header page-header">
+        <div class="header-title-container">
+            <img src="images/state_of_florida.jpg" alt="Florida State Map" class="header-map">
+            <h2 class="subheading">Cities of Florida</h2>
+            <h1 class="page-title">Contact Us</h1>        
+            <img src="images/flag.png" alt="Florida State Flag" class="header-flag">
+        </div>
+    </header>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="tallahassee.html">Tallahassee</a></li>
+            <li><a href="tampa.html">Tampa</a></li>
+            <li><a href="seffner.html">Seffner</a></li>
+            <li><a href="emailForm.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+
+    <main>
+        <div class="form-container">
+            <form id="emailForm" onsubmit="return validateForm()" action="#">
+                <div class="form-group">
+                    <label for="firstName">First Name <span class="required">*</span>:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name <span class="required">*</span>:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span>:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmEmail">Confirm Email <span class="required">*</span>:</label>
+                    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="question">Your Question <span class="required">*</span>:</label>
+                    <textarea id="question" name="question" rows="5" placeholder="Ask us anything..." minlength="10" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        function validateForm() {
+            const email = document.getElementById("email").value;
+            const confirmEmail = document.getElementById("confirmEmail").value;
+
+            // Validate email matching
+            if (email !== confirmEmail) {
+                alert("Email addresses do not match.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
