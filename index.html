@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Florida Cities - Homepage</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,10 +31,66 @@
         <h3>Latest Florida Man News</h3>
         <ul id="florida-man-posts"></ul>
     </aside>
-     <!-- Main Content -->
-     <div class="main-content">
-        Content
-    </div>
+
+     <!-- Main Content --> 
+    <section style="display: flex;">
+        <!-- left column. I used inline style here just because it was for a single element and I wanted to try it-->
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding-right: 20px;">
+            
+            <section class="section-border">
+            <h2>Welcome to Florida</h2>
+            <p>Florida is a vibrant state known for its diverse cities, each offering something unique. Explore the urban hubs of Tallahassee, Tampa, and Seffner.</p>
+            </section>
+        
+            <section class="section-border">
+            <h3>Top 3 Most Visited Cities in Florida</h3>
+            <ol>
+                <li>Orlando</li>
+                <li>Miami</li>
+                <li>Tampa</li>
+            </ol>
+            </section>
+        
+            <section class="section-border">
+            <h3>Florida City Facts</h3>
+            <table>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                    <th>Region</th>
+                </tr>
+                <tr>
+                    <td>Tallahassee</td>
+                    <td>203,650</td>
+                    <td>North</td>
+                </tr>
+                <tr>
+                    <td>Tampa</td>
+                    <td>387,700</td>
+                    <td>West-Central</td>
+                </tr>
+                <tr>
+                    <td>Seffner</td>
+                    <td>~8,300</td>
+                    <td>West-Central</td>
+                </tr>
+            </table>
+            </section>
+        
+            <section class="section-border">
+            <h3>Learn More About Florida</h3>
+            <p>For more in-depth information, visit the official <a href="https://www.visitflorida.com" target="_blank">Visit Florida website</a>.</p>
+            </section>
+        </div>
+        
+        <!-- Right Section (before the aside) -->
+        <div style="flex: 1; padding-left: 20px;">
+            <h2>Explore Florida's Cities</h2>
+            <p>Discover the unique characteristics of Florida's cities and what makes them special. You might even became a Florida Man, or Woman, yourself</p>
+            <img src="images/florida_pier.jpg" alt="Beach and Pier Scene" style="max-width: 100%;">
+        </div>
+        </section>
+    
 
     <!--I really struggled to find content to fill the aside element, 
         so I learned how to pull stories from reddit.
@@ -78,4 +135,13 @@
     </script>
 
 </body>
+<footer>
+    <p>Image Credits:</p>
+    <p>Home Page Pier Photo: Image by <a href="https://pixabay.com/users/kenny-126976/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6089501">Kenny Holmes</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6089501">Pixabay</a></p>
+    <p>Florida State Flag: Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=153392">OpenClipArt-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=153392">Pixabay</a></p>
+    <p>Florida Cartoon Map: Image by <a href="https://pixabay.com/users/mollyroselee-9214707/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8629184">Mollyroselee</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8629184">Pixabay</a></p>
+    <p>Tallahassee Section Photo: Image by <a href="https://pixabay.com/users/ernie114-7088342/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4814068">Ernie A. Stephens</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4814068">Pixabay</a></p>
+    <p>Tampa Section Photo: Image by <a href="https://pixabay.com/users/emessess-11134640/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4847040">EmEssEss</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4847040">Pixabay</a></p>
+    <p>Seffner Section Photo: Image by <a href="https://pixabay.com/users/paulbr75-2938186/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2419789">Paul Brennan</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2419789">Pixabay</a></p>
+</footer>
 </html>
