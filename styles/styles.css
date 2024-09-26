@@ -1,4 +1,5 @@
-/* global header styles*/
+/*-------------------------------------------------------------global header styles*/
+
 .header {
   width: flex;
   margin: 0 auto;
@@ -10,7 +11,8 @@
   color: white;
 }
 
-/* Homepage Header */
+/*-------------------------------------------------------------homepage header styles*/
+/* home page gets larger header */
 .home-header {
   height: 200px;
 }
@@ -25,9 +27,9 @@
   padding: 10px; 
   height: auto; 
   max-height: 100%; 
-  max-width: 200px; 
+  max-width: 250px; 
 }
-/* Home Header Flag */
+/* Home Header map */
 .home-header-map {
   position: absolute;
   left: 20px; 
@@ -36,16 +38,24 @@
   max-height: 100%; 
   max-width: 200px; 
 }
-/*Interior page*/
+
+/*-------------------------------------------------------------interior page header styles*/
+
+/* Interior Page Header height change */
+.page-header {
+  height: 125px;
+}
+
+/* styles the small subheading above the page titles */
 .subheading {
   font-size: 1.5em; 
   margin: 0;
 }
-/*Interior Page Subheader*/
+/* page title aka city name styles*/
 .page-title {
   font-size: 2em;
 }
-/*Interior page container for heading/subheading*/
+/* container for heading/subheading to stack in column */
 .header-title-container {
   display: flex;
   flex-direction: column;
@@ -53,35 +63,30 @@
   margin-bottom: 10px;
 }
 
-/* Interior Header Flag */
+/* small flag for interior page headers */
 .header-flag {
   position: absolute;
   right: 20px;
   padding: 10px;
   height: auto;
   max-height: 100%;
-  max-width: 100px;
+  max-width: 150px;
 }
 
-/* Interior Header Flag */
+/* small state graphic for interior page headers */
 .header-map {
   position: absolute;
   left: 20px;
   padding: 10px;
   height: auto;
   max-height: 100%;
-  max-width: 100px;
-}
-
-/* Interior Page Header */
-.page-header {
-  height: 125px;
+  max-width: 120px;
 }
 
 
 
+/*-------------------------------------------------------------nav bar styles */
 
-/* Navbar Styles */
 .navbar {
     background-color: #333;
     overflow: hidden;
@@ -117,7 +122,7 @@
     background-color: #04AA6D;
 }
 
-/*global page styles*/
+/*-------------------------------------------------------------global page styles*/
 
 main {
     padding: 20px;
@@ -130,60 +135,50 @@ body {
   background-color: #f4f4f4;
 }
 
-/*contact form styles*/
-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 500px;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+.city-info {
+  flex: 3;
+  margin-right: 20px;
 }
-/*inout field styles*/
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: calc(100% - 20px);
-    padding: 10px 10px 10px 10px;
-    /*padding: 10px;*/
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-/*allows user to expand text question area*/
-form textarea {
-    resize: vertical;
+/*-------------------------------------------------------------city section styles*/
+.city-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-form button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+.city-facts {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-form button:hover {
-    background-color: #218838;
+.city-facts h3 {
+  margin-top: 0;
 }
 
-/* Footer */
-footer {
-    margin-top: 20px;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
-    text-align: center;
+.city-facts ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/*aside element styles */
+.city-facts ul li {
+  margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------------aside element styles */
+
 .latest-posts {
   width: 300px;
   height: 100vh;
@@ -222,4 +217,56 @@ footer {
   .main-content {
       width: 100%;
   }
+}
+/*-------------------------------------------------------------contact form styles*/
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+/*input field styles*/
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: calc(100% - 20px);
+  padding: 10px 10px 10px 10px;
+  /*padding: 10px;*/
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+/*allows user to expand text question area*/
+form textarea {
+  resize: vertical;
+}
+/*submit button style*/
+form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/*button hover style*/
+form button:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
 }
