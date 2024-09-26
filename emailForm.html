@@ -29,7 +29,6 @@
         </ul>
     </nav>
     
-
     <main>
         <div class="form-container">
             <form id="emailForm" onsubmit="return validateForm()" action="#">
@@ -62,22 +61,9 @@
             </form>
         </div>
     </main>
-
-    <script>
-        function validateForm() {
-            const email = document.getElementById("email").value;
-            const confirmEmail = document.getElementById("confirmEmail").value;
-
-            // Validate email matching
-            if (email !== confirmEmail) {
-                alert("Email addresses do not match.");
-                return false;
-            }
-
-            return true;
-        }
-    </script>
+    <script src="styles/scripts.js"></script>
 </body>
+
 <footer>
     <p>Image Credits:</p>
     <p>Home Page Pier Photo: Image by <a href="https://pixabay.com/users/kenny-126976/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6089501">Kenny Holmes</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6089501">Pixabay</a></p>
@@ -87,4 +73,5 @@
     <p>Tampa Section Photo: Image by <a href="https://pixabay.com/users/emessess-11134640/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4847040">EmEssEss</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4847040">Pixabay</a></p>
     <p>Seffner Section Photo: Image by <a href="https://pixabay.com/users/paulbr75-2938186/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2419789">Paul Brennan</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2419789">Pixabay</a></p>
 </footer>
+
 </html>
